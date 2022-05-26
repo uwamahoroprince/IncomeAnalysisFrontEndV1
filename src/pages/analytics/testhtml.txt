@@ -1,0 +1,398 @@
+<?page title="${labels.security.login.pageTitle}"?>
+<?link rel="shortcut icon" href="assets/img/favicon.ico"?>
+<?script src="../../assets/js/jquery.maskedinput.js" ?>
+<?init class="wys.vmrl.util.AuthController"?>
+
+<zk xmlns:n="native"  xmlns:w="client">
+
+    <div class="main-wrapper" apply="org.zkoss.bind.BindComposer"
+        viewModel="@id('vm') @init('wys.vmrl.ui.admin.dashboard.DashboardUI')">
+        <include src="includes/left-menu.zul" />
+        <include src="includes/top-menu.zul" /> 
+        <include src="includes/dashboardStyle.zul" />
+        <div id="main" class="page-wrapper">
+            <div id="pageSpace">
+            	<div class="row d-flex align-items-center justify-content-center m-3">
+            		<div class="col-xl-2 col-sm-6 col-12">
+            		
+            			<div class="circle-tile flip-card-inner mt-2">
+					       
+					        <div class="card mini-stat mb-2">
+			                    <div class="p-2 red text-white">
+			                      <div class="mini-stat-icon">
+			                        <n:i class="mdi mdi-cube-outline float-right mb-0"></n:i>
+			                      </div>
+			                      <span class="text-uppercase mb-0">New Orders</span>
+			                    </div>
+			                    <div class="card-body">
+			                      <div class="border-bottom pb-1">
+			                        <span class="badge badge-success">+11% </span
+			                        ><span class="ml-2 text-muted"
+			                          >From previous period</span
+			                        >
+			                      </div>
+			                      <div class="mt-1 text-muted">
+			                        <div class="float-right">
+			                          <span class="m-0">Last : 1325</span>>
+			                        </div>
+			                        <span class="m-0">
+			                          1456<n:i class="mdi mdi-arrow-up text-success ml-2"></n:i>
+			                        </span>
+			                      </div>
+			                    </div>
+                  			</div>
+      					</div>
+            		</div>
+            		<div class="col-xl-2 col-sm-6 col-12">
+            		
+            			<div class="circle-tile flip-card-inner mt-2">
+					       
+					        <div class="card mini-stat mb-2">
+			                    <div class="p-2 red text-white">
+			                      <div class="mini-stat-icon">
+			                        <n:i class="mdi mdi-cube-outline float-right mb-0"></n:i>
+			                      </div>
+			                      <span class="text-uppercase mb-0">New Orders</span>
+			                    </div>
+			                    <div class="card-body">
+			                      <div class="border-bottom pb-1">
+			                        <span class="badge badge-success">+11% </span
+			                        ><span class="ml-2 text-muted"
+			                          >From previous period</span
+			                        >
+			                      </div>
+			                      <div class="mt-1 text-muted">
+			                        <div class="float-right">
+			                          <span class="m-0">Last : 1325</span>>
+			                        </div>
+			                        <span class="m-0">
+			                          1456<n:i class="mdi mdi-arrow-up text-success ml-2"></n:i>
+			                        </span>
+			                      </div>
+			                    </div>
+                  			</div>
+      					</div>
+            		</div>
+            		<div class="col-xl-2 col-sm-6 col-12">
+            		
+            			<div class="circle-tile flip-card-inner mt-2">
+					       
+					        <div class="card mini-stat mb-2">
+			                    <div class="p-2 red text-white">
+			                      <div class="mini-stat-icon">
+			                        <n:i class="mdi mdi-cube-outline float-right mb-0"></n:i>
+			                      </div>
+			                      <span class="text-uppercase mb-0">New Orders</span>
+			                    </div>
+			                    <div class="card-body">
+			                      <div class="border-bottom pb-1">
+			                        <span class="badge badge-success">+11% </span
+			                        ><span class="ml-2 text-muted"
+			                          >From previous period</span
+			                        >
+			                      </div>
+			                      <div class="mt-1 text-muted">
+			                        <div class="float-right">
+			                          <span class="m-0">Last : 1325</span>>
+			                        </div>
+			                        <span class="m-0">
+			                          1456<n:i class="mdi mdi-arrow-up text-success ml-2"></n:i>
+			                        </span>
+			                      </div>
+			                    </div>
+                  			</div>
+      					</div>
+            		</div>
+            		<div class="col-xl-2 col-sm-6 col-12">
+            		
+            			<div class="circle-tile flip-card-inner mt-2">
+					       
+					        <div class="card mini-stat mb-2">
+			                    <div class="p-2 red text-white">
+			                      <div class="mini-stat-icon">
+			                        <n:i class="mdi mdi-cube-outline float-right mb-0"></n:i>
+			                      </div>
+			                      <span class="text-uppercase mb-0">New Orders</span>
+			                    </div>
+			                    <div class="card-body">
+			                      <div class="border-bottom pb-1">
+			                        <span class="badge badge-success">+11% </span
+			                        ><span class="ml-2 text-muted"
+			                          >From previous period</span
+			                        >
+			                      </div>
+			                      <div class="mt-1 text-muted">
+			                        <div class="float-right">
+			                          <span class="m-0">Last : 1325</span>>
+			                        </div>
+			                        <span class="m-0">
+			                          1456<n:i class="mdi mdi-arrow-up text-success ml-2"></n:i>
+			                        </span>
+			                      </div>
+			                    </div>
+                  			</div>
+      					</div>
+            		</div>
+            		
+            	</div>
+            	<div class="row d-flex  justify-content-center formated-col mt-0 pt-0">
+            		<div class="col-xl-8 col-sm-6 col-12 mt-3">
+            		
+            			<!-- <charts id="chart" type="area" model="@bind(vm.lineBarModel())"  title="Repared Cars"/> -->
+            			<div apply="wys.vmrl.ui.admin.dashboard.DashBoardChartsUI">
+							<charts id="chart" type="column" title="Repaired Cars"/>
+							</div>
+            		
+            		</div>
+            		<div class="col-xl-4 col-sm-6 col-12 mt-3 ">
+            			<div class="card  border light rounded">
+            			<div class=" badge text-black mt-4 d-flex align-items-center justify-content-around"><label value="OPERATION APPROVAL STATUS"></label></div>
+            			<div class="badge text-black mt-4 d-flex align-items-center justify-content-around">
+            				<label value="Operation"/>
+            				<label value="Progress"/>
+            				<label value=""/>
+            				<label value="%"/>
+            				<label value="Total "/>
+            			</div>
+          					<div class="card-body">
+          					
+          						<div class="d-flex align-items-center justify-content-around mt-2 mb-4">
+          							<label value="Job Cards"/>
+          							<progressmeter value="@load(vm.approvedJobCards)"/>
+          							<div><label value="@load(vm.approvedJobCards)"/><label value="%"/></div>
+          							<div class="badge text-black"><label value="@load(vm.totalJobCards)"/></div>
+          						</div>
+          						<div class="d-flex align-items-center justify-content-around mb-4">
+          							<label value="Inspections"/>
+          							<progressmeter value="@load(vm.approvedInspections)"/>
+          							<div><label value="@load(vm.approvedInspections)"/><label value="%"/></div>
+          							<div class="badge text-black"><label value="@load(vm.totalInspections)"/></div>
+          						</div>
+          						<div class="d-flex align-items-center justify-content-around mb-4">
+          							<label value="Quotations"/>
+          							<progressmeter value="@load(vm.approvedQuotations)"/>
+          							<div><label value="@load(vm.approvedQuotations)"/><label value="%"/></div>
+          							<div class="badge text-black"><label value="@load(vm.totalQuotations)"/></div>
+          						</div>
+          						<div class="d-flex align-items-center justify-content-around mb-4">
+          							<label value="Reparations"/>
+          							<progressmeter value="@load(vm.approvedReparations)"/>
+          							<div><label value="@load(vm.approvedReparations)"/><label value="%"/></div>
+          							<div class="badge text-black"><label value="@load(vm.totalReparations)"/></div>
+          						</div>
+          						<div class="d-flex align-items-center justify-content-around mb-4">
+          							<label value="Gate Passes"/>
+          							<progressmeter value="@load(vm.approvedGatePass)"/>
+          							<div><label value="@load(vm.approvedGatePass)"/><label value="%"/></div>
+          							<div class="badge text-black"><label value="@load(vm.totalGatePass)"/></div>
+          						</div>
+          					</div>
+          				</div>
+            		</div>
+              <div class="row mt-2">
+                <div class="col-xl-4">
+                  <div class="card m-b-30">
+                    <div class="card-body">
+                      <n:h4 class="mt-0 header-title mb-4">Approvals</n:h4>
+                      <div class="">
+                        <div class="row align-items-center mb-5">
+                          <div class="col-md-6">
+                            <div class="text-center">
+                              <span
+                                class="peity-pie">
+                                	<div apply="wys.vmrl.ui.admin.dashboard.DashBoardChartsUI">
+										<charts id="inventoryApprovalPie" type="pie" title="Inventory"/>
+									</div>
+                                </span
+                              >
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="text-center">
+                              <span
+                                class="peity-pie">
+                                	<div apply="wys.vmrl.ui.admin.dashboard.DashBoardChartsUI">
+										<charts id="approvalPie" type="pie" title="Operation"/>
+									</div>
+                                </span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row text-center">
+                          <div class="col-6">
+                            <div>
+                              <div class="mb-4">
+                                <span
+                                  class="peity-donut"
+                                  
+                                 
+                                 
+                                  >2,4</span
+                                >
+                              </div>
+                              <n:h4>42%</n:h4>
+                              <n:p class="mb-0 text-muted">Online Earning</n:p>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div>
+                              <div class="mb-4">
+                                <span
+                                  class="peity-donut"
+                                  
+                                 
+                                 
+                                  >8,4</span
+                                >
+                              </div>
+                              <n:h4>58%</n:h4>
+                              <n:p class="text-muted mb-0">Offline Earning</n:p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card m-b-30 blog-wid">
+                    <div class="card-body">
+                      <div class="float-left p-1 mr-3">
+                        <div class="text-center bg-primary rounded p-3">
+                          <n:p class="text-white-50 mb-4">October</n:p>
+                          <n:h2 class="text-white mb-0">24</n:h2>
+                        </div>
+                      </div>
+                      <div class="post-details p-2">
+                        <n:h6 class="mt-0">
+                          <a href="#" class="text-dark"
+                            >It will be as simple as Occidental</a
+                          >
+                        </n:h6>
+                        <n:p class="text-muted">
+                          Everyone realizes why a new common language would be
+                          desirable.
+                        </n:p>
+                        <n:p class="mb-0">
+                          By <a href="#" class="text-primary">Daniel Sons</a>
+                        </n:p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4">
+                  <div class="card m-b-30">
+                    <div class="card-body">
+                      <n:h4 class="mt-0 header-title mb-4">
+                        Recent Activity Feed
+                      </n:h4>
+                      <n:ul class="list-unstyled activity-list">
+                        <n:li class="activity-item">
+                          <span class="activity-date">12 Oct</span>
+                          <span class="activity-text"
+                            >Responded to need â€œVolunteer Activitiesâ€�</span
+                          >
+                          <n:p class="text-muted mt-2">
+                            Everyone realizes why a new common language would be
+                            desirable common words.
+                          </n:p>
+                        </n:li>
+                        <n:li class="activity-item">
+                          <span class="activity-date">13 Oct</span>
+                          <span class="activity-text"
+                            >Uploaded this Images</span
+                          >
+                          <n:p class="text-muted mt-2">
+                            Their separate existence is a myth
+                          </n:p>
+                          <div>
+                            9kkk
+                          </div>
+                        </n:li>
+                        <n:li class="activity-item">
+                          <span class="activity-date">14 Oct</span>
+                          <span class="activity-text">Uploaded this File</span>
+                          <n:p class="text-muted mt-2 mb-4">
+                            The new common language will be more simple and
+                            regular their pronunciation.
+                          </n:p>
+                          <div>
+                            <a href="#" class="text-muted"
+                              ><n:i
+                                class="ion-ios7-folder h1 p-3 bg-light rounded"
+                              ></n:i>
+                              <n:p class="mt-2 mb-0">background.psd</n:p></a
+                            >
+                          </div>
+                        </n:li>
+                      </n:ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div
+                        class="card bg-primary m-b-30 text-white weather-box"
+                      >
+                        <div class="card-body">
+                          <div class="text-center">
+                            <div>
+                              ccc
+                            </div>
+                            <div>
+                              <n:h3>28Â° c</n:h3>
+                              <n:h6>Heavy rain</n:h6>
+                              <n:h4 class="mt-4">New York</n:h4>
+                            </div>
+                          </div>
+                          <div class="weather-icon">
+                            <n:i class="mdi mdi-weather-pouring"></n:i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div
+                        class="card bg-warning m-b-30 text-white weather-box"
+                      >
+                        <div class="card-body">
+                          <div class="text-center">
+                            <div>
+                              jj
+                            </div>
+                            <div>
+                              <n:h3>32Â° c</n:h3>
+                              <n:h6>Partly cloudy</n:h6>
+                              <n:h4 class="mt-4">California</n:h4>
+                            </div>
+                          </div>
+                          <div class="weather-icon">
+                            <n:i class="mdi mdi-weather-partlycloudy"></n:i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="card m-b-30">
+                        <div class="card-body">
+                          <n:h4 class="mt-0 header-title mb-4">
+                            Sales Analytics
+                          </n:h4>
+                          <div
+                            id="morris-donut-example"
+                            class="morris-charts"
+                            style="height: 265px"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            	</div>
+            </div>
+        </div>
+    </div>
+</zk>
