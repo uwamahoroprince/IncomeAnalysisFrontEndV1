@@ -57,48 +57,60 @@ const Dashboard = () => {
             number={totalSubscription}
             icon="fa-solid fa-basketball"
             iconBackground="dash-widget-icon bg-1"
-            persentage={totalSubscription}
+            persentage={60}
+            arrow="fas fa-arrow-up me-1"
             subTitle="Since Last Week"
+            arrowColor="text-success me-1"
           />
           <Widget
             title="Total Activities"
             number={totalActivities}
             icon="fa-solid fa-dumbbell"
             iconBackground="dash-widget-icon bg-2"
-            persentage={totalActivities}
+            persentage={11}
+            arrow="fas fa-arrow-up me-1"
             subTitle="Since Last Week"
+            arrowColor="text-success me-1"
           />
           <Widget
             title="Total Transactions"
             number={totalTransactions}
             icon="fas fa-dollar-sign"
             iconBackground="dash-widget-icon bg-3"
-            persentage={totalTransactions}
+            persentage={73}
+            arrow="fas fa-arrow-up me-1"
             subTitle="Since Last Week"
+            arrowColor="text-success me-1"
           />
           <Widget
             title="Total Accounts "
             number={totalAccounts}
             icon="fa-solid fa-suitcase"
             iconBackground="dash-widget-icon bg-4"
-            persentage={totalAccounts}
+            persentage={3}
+            arrow="fas fa-arrow-down me-1"
             subTitle="Since Last Week"
+            arrowColor="text-danger me-1"
           />
           <Widget
             title="Active Subscription"
             number={activeSub}
             icon="fa-solid fa-a"
             iconBackground="dash-widget-icon bg-5"
-            persentage={activeSub}
+            persentage={11}
+            arrow="fas fa-arrow-up me-1"
             subTitle="Since Last Week"
+            arrowColor="text-up me-1"
           />
           <Widget
             title="Inactive Subscription"
             number={inactiveSub}
             icon="fa-solid fa-i"
             iconBackground="dash-widget-icon bg-6"
-            persentage={inactiveSub}
+            persentage={1}
+            arrow="fas fa-arrow-down me-1"
             subTitle="Since Last Week"
+            arrowColor="text-danger me-1"
           />
         </div>
       </div>

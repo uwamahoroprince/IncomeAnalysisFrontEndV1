@@ -31,8 +31,8 @@ const Widget = (props) => {
               ></div>
             </div>
             <p className="text-muted mt-3 mb-0">
-              <span className="text-danger me-1">
-                <i className="fas fa-arrow-down me-1"></i>
+              <span className={props.arrowColor}>
+                <i className={props.arrow}></i>
                 {props.persentage}.0%
               </span>
               {props.subTitle}

@@ -290,8 +290,12 @@ const IncomeAnalysis = () => {
                     </div>
                     <div className="col-lg-12 col-md-12">
                       <div className="form-group">
-                        <label>Predicred</label>
                         <span>Predicted Income: {predicted.prediction} </span><br/>
+                        <span>Clients: {predicted.clients} </span><br/>
+                        <span>Subscription: {predicted.subscription} </span><br/>
+                        <span>Acounts: {predicted.account} </span><br/>
+                        <span>Activity: {predicted.activity} </span><br/>
+                        <span>Refunded Subscriptions: {predicted.refundedSub} </span><br/>
                         <span>Accurancy: {predicted.accuracy}.</span><span>{predicted.decimal} %</span>
                       </div>
                     </div>

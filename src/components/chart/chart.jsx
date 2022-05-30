@@ -281,14 +281,14 @@ const Chart = () => {
                 </div>
               </div>
               <div id="sales_chart">
-                <PieChart width={500} height={400}>
+                <PieChart width={400} height={400}>
                   <Pie
                     data={pieData}
                     cx={200}
-                    cy={150}
+                    cy={200}
                     labelLine={false}
                     label={renderCustomizedLabel}
-                    outerRadius={150}
+                    outerRadius={180}
                     fill="#8884d8"
                     dataKey="value"
                   >
